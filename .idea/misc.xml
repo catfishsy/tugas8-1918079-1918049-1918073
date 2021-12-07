@@ -10,10 +10,16 @@
         <entry key="..\:/Project KAMPOES/Android Project/KERKEL_MEAL/app/src/main/res/layout/activity_main2.xml" value="0.33" />
         <entry key="..\:/Project KAMPOES/Android Project/KERKEL_MEAL/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Project KAMPOES/Android Project/KERKEL_MEAL/app/src/main/res/layout/menufragment.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/aboutfragment.xml" value="0.1" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/fragment_about.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/mmalb/Documents/PraktikumMobileProgramming/Pertemuan8/kerkel_meal/app/src/main/res/layout/menufragment.xml" value="0.18" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
