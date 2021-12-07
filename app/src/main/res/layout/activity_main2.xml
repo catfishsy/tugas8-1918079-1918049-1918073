@@ -31,7 +31,7 @@
         android:layout_below="@id/toolbar"
         android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:layout_margin="20dp"
         android:elevation="5dp"
         android:padding="10dp"
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:paddingRight="20dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/gambar" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -130,8 +130,33 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/instruction"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/text"
         android:padding="20dp" />
-
+    <TextView
+        android:id="@+id/text1"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="Tags : "
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tags"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="Pasta , Curry"
+        />
 </RelativeLayout>
