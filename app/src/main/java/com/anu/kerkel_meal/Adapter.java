@@ -26,10 +26,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup
-                                                 parent, int viewType) {
-        View view =
-                LayoutInflater.from(context).inflate(R.layout.item,null,false);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item,null,false);
         return new ViewHolder(view);
     }
     @Override
@@ -39,7 +37,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                                                    View.OnClickListener() {
                                                        @Override
                                                        public void onClick(View v) {
-                                                           Intent intent = new Intent(context, Main2.class);
                                                            ModelClass recipe = new ModelClass(
                                                                    modelClassArrayList.get(position).getStrCategory(),
                                                                    modelClassArrayList.get(position).getStrMeal(),
@@ -48,7 +45,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                                                                    modelClassArrayList.get(position).getStrInstructions(),
                                                                    modelClassArrayList.get(position).getStrTags()
                                                            );
-                                                           intent.putExtra("RECIPE", recipe);
+                                                           Intent intent = new Intent(context, Main2.class);
+
+                                                           intent.putExtra(Main2.XTRA_RECIPE, recipe);
                                                            context.startActivity(intent);
                                                        }
                                                    });

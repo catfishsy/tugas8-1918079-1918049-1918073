@@ -1,5 +1,6 @@
 package com.anu.kerkel_meal;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +20,6 @@ public class MenuFragment extends Fragment {
     Adapter adapter;
     private RecyclerView recyclerViewMenu;
 
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -30,14 +29,14 @@ public class MenuFragment extends Fragment {
         recyclerViewMenu=v.findViewById(R.id.recyclermenu);
         modelClassArrayList = new ArrayList<>();
         recyclerViewMenu.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new Adapter(getContext(),modelClassArrayList);
+        adapter = new Adapter(getContext(), modelClassArrayList);
         recyclerViewMenu.setAdapter(adapter);
         findRecipes();
         return v;
     }
     private void findRecipes() {
 
-        ApiUtilities.getApiInterface().getRecipes("Spicy").enqueue(new Callback<MainRecipe>() {
+        ApiUtilities.getApiInterface().getRecipes("A").enqueue(new Callback<MainRecipe>() {
             @Override
             public void onResponse(Call<MainRecipe> call,
                                    Response<MainRecipe> response) {

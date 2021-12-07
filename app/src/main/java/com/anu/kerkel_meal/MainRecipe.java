@@ -3,17 +3,17 @@ package com.anu.kerkel_meal;
 import java.util.ArrayList;
 
 public class MainRecipe {
-    private ArrayList<ModelClass> recipes;
+    private ArrayList<ModelClass> meals;
 
-    public MainRecipe(ArrayList<ModelClass> recipes) {
-        this.recipes = recipes;
+    public MainRecipe(ArrayList<ModelClass> meals) {
+        this.meals = meals;
     }
 
     public ArrayList<ModelClass> getRecipes() {
-        return recipes;
+        return meals;
     }
-    public void setRecipes(ArrayList<ModelClass> recipes) {
-        this.recipes = recipes;
+    public void setRecipes(ArrayList<ModelClass> meals) {
+        this.meals = meals;
     }
 
 }

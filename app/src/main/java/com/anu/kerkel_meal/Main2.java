@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 public class Main2 extends AppCompatActivity {
+    public static final String XTRA_RECIPE = "RECIPE";
 
     ModelClass recipe;
     ImageView IMthumbnail;
@@ -20,23 +21,21 @@ public class Main2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        TMeal = findViewById(R.id.txt_recipetitle);
+        TCategory = findViewById(R.id.txt_recipecategory);
+        TArea = findViewById(R.id.txt_recipeorigin);
+        TInstructions = findViewById(R.id.txt_instruction);
+        TTags = findViewById(R.id.txt_tags);
+        IMthumbnail = findViewById(R.id.imageview);
 
-        if(getIntent().getExtras() != null) {
-            recipe = getIntent().getParcelableExtra("RECIPE");
-            TMeal = findViewById(R.id.txt_recipetitle);
-            TCategory = findViewById(R.id.txt_recipecategory);
-            TArea = findViewById(R.id.txt_recipeorigin);
-            TInstructions = findViewById(R.id.txt_instruction);
-            TTags = findViewById(R.id.txt_tags);
+        recipe = getIntent().getParcelableExtra(XTRA_RECIPE);
+        TMeal.setText(recipe.getStrMeal());
+        Glide.with(this).load(recipe.getStrMealThumb() + "/preview").into(IMthumbnail);
+        TMeal.setText(recipe.getStrMeal());
+        TCategory.setText(recipe.getStrCategory());
+        TArea.setText(recipe.getStrArea());
+        TInstructions.setText(recipe.getStrInstructions());
+        TTags.setText(recipe.getStrTags());
 
-
-            Glide.with(context).load(recipe.getStrMealThumb()).into(IMthumbnail);
-            TMeal.setText(recipe.getStrMeal());
-            TCategory.setText(recipe.getStrCategory());
-            TArea.setText(recipe.getStrArea());
-            TInstructions.setText(recipe.getStrInstructions());
-            TTags.setText(recipe.getStrTags());
-
-        }
     }
 }

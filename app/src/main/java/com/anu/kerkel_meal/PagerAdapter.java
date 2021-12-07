@@ -10,7 +10,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
     int totalTabs;
     public PagerAdapter(@NonNull FragmentManager fm, int totalTabs) {
         super(fm, totalTabs);
-        totalTabs = totalTabs;
+        this.totalTabs = totalTabs;
     }
 
     @NonNull

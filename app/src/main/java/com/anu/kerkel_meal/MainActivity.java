@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     TabItem mmenu, mabout;
     PagerAdapter pagerAdapter;
-    ViewPager viewPager;
     Toolbar mtoolbar;
 
     @Override
@@ -30,18 +29,24 @@ public class MainActivity extends AppCompatActivity {
         pagerAdapter = new PagerAdapter(this.getSupportFragmentManager(), 2);
         viewPager.setAdapter(pagerAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-            }
-        });
+        tabLayout.addOnTabSelectedListener(new
+                                                   TabLayout.OnTabSelectedListener() {
+                                                       @Override
+                                                       public void onTabSelected(TabLayout.Tab tab) {
+                                                           viewPager.setCurrentItem(tab.getPosition());
+
+                                                           if(tab.getPosition()==0||tab.getPosition()==1)
+                                                           {
+                                                               pagerAdapter.notifyDataSetChanged();
+                                                           }
+                                                       }
+                                                       @Override
+                                                       public void onTabUnselected(TabLayout.Tab tab) {
+                                                       }
+                                                       @Override
+                                                       public void onTabReselected(TabLayout.Tab tab) {
+                                                       }
+                                                   });
     }
 
 }
