@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6E6E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/recipetitle"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:padding="5dp"
+        android:text="Dibuat Oleh Kelompok : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="1. 1918079 Muhammad Al Biruni"
+        android:textSize="12sp" />
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="2. 1918049 Naufal Amim Ramadhan"
+        android:textSize="12sp" />
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="3. 1918073 Muhammad Mirza Mashudi"
+        android:textSize="12sp" />
+</LinearLayout>
